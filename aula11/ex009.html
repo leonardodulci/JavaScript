@@ -7,7 +7,7 @@
     <title>Where you From?</title>
 </head>
 <body>
-    <h1>De qual cidade você veio?</h1>
+    <h1>De qual país você veio?</h1>
     <label for="ipais">Nos conte de qual cidade você veio?</label>
     <input type="text" name="pais" id="ipais">
     <input type="button" value="Verificar" onclick="verificar()">
@@ -17,12 +17,13 @@
 
     <script>
         function verificar(){
-            var pais = document.getElementById(`ipais`)
-            var res = document.getElementById(`res`)
-            res.innerHTML = `Você é ${pais}`
-
-
-    }
+            var pais = document.querySelector('input#ipais')
+            var res = document.querySelector('div#res')
+            
+            if(pais == 'Brasil'){
+                res.innerHTML = 'Você é Brasileiro'
+            } else {
+            
     </script>
 </body>
 </html>
