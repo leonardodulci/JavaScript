@@ -19,21 +19,22 @@ function verificar() {
         img.style.margin = 'auto'
             if(idade >= 0 && idade < 10) {
                 //criançã
-                img.setAttribute('src' , 'baby-m.jpg')
+                img.setAttribute('src' , 'baby-m.png')
             } else if(idade < 21 ){
                 //jovem
-                img.setAttribute('src' , 'young-m.jpg')
-            } else if(idade < 50){
+                img.setAttribute('src' , 'young-m.png')
+            } else if(idade > 21 && idade < 49){
                 //adulto
-                img.setAttribute('src' , 'adult-m.jpg')
-            } else(idade > 70 );{
+                img.setAttribute('src' , 'adult-m.png')
+            } else if(idade >= 70){
                 //idoso
-                img.setAttribute('src' , 'idoso-m.jpg')
+                img.setAttribute('src' , 'idoso-m.png')
             }
-       }
-
+       
+        }
          else if (fsex[1].checked){
         genero = 'Mulher'
+        
        
        if(idade >= 0 && idade < 10) {
             //criançã
@@ -44,16 +45,21 @@ function verificar() {
         } else if(idade < 50){
             //adulto
             img.setAttribute('src' , 'adult-f.png')
-        } else(idade > 70 );{
+        } else if(idade > 70 ){
         //idoso
         img.setAttribute('src' , 'idosa-f.png')
         }
-         
+    
     }
-   
+}
        res.style.textAlign ='center'
        res.innerHTML = `Detectamos ${genero} com ${idade} anos`
        res.appendChild(img)
+       //img.style.display = 'block'
+       img.style.margin ='auto'
+       img.style.width = '250px'
+       img.style.height = '250px'
 
 }
-}
+
+ 
