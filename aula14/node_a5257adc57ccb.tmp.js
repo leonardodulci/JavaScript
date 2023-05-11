@@ -4,9 +4,11 @@ for (var c = 1;c <= 10; c++){
 }
 console.log('FIM!')
 */
-
-
-for (var c=5; c<=12; c=c+2){
-    console.log(`passo ${c}`)
+var n1 = 0
+var n2 = 5
+var n3 = 1
+var res = 0
+while (n1 < n2){
+    console.log(res)
+   res = n1 + n3
 }
-
