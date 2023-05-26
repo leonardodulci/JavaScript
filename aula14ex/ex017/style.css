@@ -1,11 +1,11 @@
 @charset "UTF-8";
 
-
+@media screen and {
     
+}
 body{
     background-color: rgb(70, 142, 236);
     font: normal 15pt Arial;
-   
 }
 
 header{
