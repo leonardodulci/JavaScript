@@ -1,0 +1,30 @@
+body {
+    background-color: #cde;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-color: #567;
+    color: #def;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+figure, figure img {
+    width: 256px;
+    height: 256px;
+}
+
+#fig2 {
+    background-image: url('../img/Avatar-256.png');
+}
+
+#fig2:hover {
+    background-image: url('../img/Avatar-256-grey.png');
+}

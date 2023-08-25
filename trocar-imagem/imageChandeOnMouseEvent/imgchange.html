@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triocar imagem ao passar o mouse</title>
+    <link rel="stylesheet" href="./css/imgchange.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Trocar imagem ao passar o mouse!</h1>
+    </header>
+    <section>
+        <figure id="fig1">
+            <img src="./img/Avatar-256.png" onmouseover="this.src='./img/Avatar-256-grey.png'"
+                onmouseout="this.src='./img/Avatar-256.png'">
+            <figcaption>Usando mouseover/mouseout</figcaption>
+        </figure>
+        <figure id="fig2">
+            <img>
+            <figcaption>Usando CSS</figcaption>
+        </figure>
+    </section>
+
+</body>
+
+</html>
